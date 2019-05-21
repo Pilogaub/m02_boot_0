@@ -2,7 +2,8 @@ class Termometro():
     def __init__(self):
         self.__unidadM = "ºC"
         self.__temperatura = 0
-    
+
+#Esta funcion no se puede llamar, aparecerá el atributo no existe:    
     def __conversor(self, temperatura, unidad):
         if unidad == "ºC":
             return "{}º F".format(temperatura * 9/5 + 32)
